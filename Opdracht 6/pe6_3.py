@@ -1,9 +1,8 @@
-lengte = input('Hoe lang (cm) ben je? ')
+gebruikerLengte = int(input('Hoe lang ben je?: '))
 
 def lang_genoeg(lengte):
-    if eval(lengte) >= 120:
-        print('Je bent lang genoeg!')
+    if lengte >= 120:
+        return 'Je bent lang genoeg'
     else:
-        print('Sorry je bent te klein')
-    return lengte
-print(lang_genoeg(lengte))
+        return 'Sorry, je bent te klein'
+print(lang_genoeg(gebruikerLengte))
